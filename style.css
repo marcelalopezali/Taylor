@@ -28,6 +28,10 @@ a:hover{
     box-shadow: 10px 5px 5px rgb(77, 76, 76);
 }
 
+.h{
+    display: none;
+}
+
 .box2{
     display: flex;
     flex-direction: row;
@@ -35,18 +39,24 @@ a:hover{
     justify-content:space-around;
     align-items: center;
     color: black;
+    margin-left: 10px;
 }
 
 .text{
-    padding-left: 70px;
+    background-color: white;
     text-align: left;
     overflow: visible;
     font-weight: bold;
 }
 
+section > div > p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .london{
     text-decoration: line-through;
-    font-size: 1.9rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -84,20 +94,28 @@ button:hover{
 }
 
 img{
+    position: relative;
+    top: 10px;
+    justify-content: end;
     width: 580px;
     height: 630px;
     background-color: white;
     margin-bottom: 0;
-    background-image: url(./img/vact.png);
+    background-image: url(./img/astb.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position-x: center;
+    background-position-y: 65px;
 }
 
 .box3{
     display: flex;
     flex-direction: row;
-    background-color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 p{
@@ -106,11 +124,14 @@ p{
 }
 
 .diagonal{
+        position: relative;
+        bottom: 20px;
         font-weight:300;
         text-transform: uppercase;
         width: 1200px;
-        height: 60px;
+        height: 40px;
         margin-top: 0;
+        padding-top: 30px;
         background: black;
         color: white;
         -webkit-transform: rotate(-3deg);      
@@ -127,9 +148,155 @@ p{
     background-color: white;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
 }
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Anybody:wght@400;500;600;700;800&family=Prosto+One&display=swap');
 
+/* Responsive*/
+
+@media (min-width: 300px) and (max-width: 770px) {
+
+   .box1{
+    justify-content: space-between;
+   }
+    .box1 > div > h4{
+    font-size: 0.8rem;
+    }
+
+   a{
+    display: none;
+   }
+
+   .h{
+    display: flex;
+    }
+
+   .h:hover{
+    box-shadow: 10px 5px 5px rgb(77, 76, 76);
+    }
+
+   button{
+    font-size: 0.5rem;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    }
+
+    .bDos{
+    background-color: black;
+    color: white;
+    }
+
+   .box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   
+   section > div > p {
+    font-size: 1rem;
+   }
+
+   .london{
+    text-decoration: line-through;
+    font-size: 1rem;
+    font-weight: bold;
+   }
+
+   .box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 200px;
+   }
+
+   .img{
+    position: relative;
+    width: 430px;
+    height: 480px;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 0;
+    background-image: url(./img/astb.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position-x: center;
+    background-position-y: 55px;
+    margin-bottom: 100px;
+   }
+
+   .diagonal{
+    font-weight:300;
+    text-transform: uppercase;
+    width:auto;
+    height: 40px;
+    font-size: 0.5rem;
+    font-weight: 100;
+    -webkit-transform: none;
+    padding-top: 30px;
+    background: black;
+    color: white;
+   }
+
+   .i{
+    display: none;
+   }
+
+   .span{
+    font-size: 0.4rem
+   }
+
+   .box3{
+    width: 100vw;
+   }
+
+   .box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+}
+
+@media (min-width: 771px) and (max-width: 1090px){
+    a{
+        display: none;
+       }
+    
+       .h{
+        display: flex;
+        }
+    
+       .h:hover{
+        box-shadow: 10px 5px 5px rgb(77, 76, 76);
+        }
+
+        .box2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+           }
+           
+           section > div > p {
+            font-size: 1rem;
+           }
+        
+           .london{
+            text-decoration: line-through;
+            font-size: 1rem;
+            font-weight: bold;
+           }
+
+           .diagonal{
+            position: relative;
+            bottom: 30px;
+            padding-bottom: 15px;
+           }
+}
