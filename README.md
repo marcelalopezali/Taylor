@@ -1,2 +1,2 @@
 # Taylor
-ok
+Page. Responsive.
